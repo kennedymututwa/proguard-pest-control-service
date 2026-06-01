@@ -164,72 +164,88 @@
                         </div>
                     </div>
 
-                    <div class="lg:col-span-5 relative">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-teal/20 to-transparent blur-3xl rounded-full transform rotate-12"></div>
-                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-slate-150/80">
-                            <img src="https://i.postimg.cc/cLNW641N/1780043050956.jpg" alt="Proguard Professional Pest Sprayer Operator" class="w-full h-[450px] object-cover rounded-2xl">
-                            
-                            <div class="absolute bottom-6 left-6 bg-navy/95 backdrop-blur-md text-white border border-white/10 p-4 rounded-xl flex items-center gap-3 shadow-xl">
-                                <div class="bg-teal p-2 rounded-lg text-white font-bold text-lg">⭐</div>
-                                <div>
-                                    <p class="text-[9px] uppercase tracking-widest text-slate-300 font-semibold mb-0.5">ESTABLISHED BRAND</p>
-                                    <p class="font-display font-extrabold text-sm leading-none">YOUR TRUSTED PARTNER</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+                    <!-- HERO RIGHT COLUMN: NEW BADGES GRID -->
+<div class="lg:col-span-5 grid grid-cols-2 gap-3 relative">
+    <div class="space-y-3">
+        <div class="bg-white p-1.5 rounded-2xl shadow-md border border-slate-100">
+            <img src="https://i.postimg.cc/g0Tk8Y5X/IMG-20260601-WA0002.jpg" alt="ProGuard Operations Badge" class="w-full h-auto rounded-xl object-cover">
+        </div>
+    </div>
+    <div class="space-y-3 pt-6">
+        <div class="bg-white p-1.5 rounded-2xl shadow-md border border-slate-100">
+            <img src="https://i.postimg.cc/9fnFZWSw/IMG-20260601-WA0007.jpg" alt="ProGuard Premium Standards" class="w-full h-auto rounded-xl object-cover">
+        </div>
+        <div class="bg-slate-900 text-white p-3 rounded-xl flex items-center gap-2 shadow-lg">
+            <span class="text-amber-400">⭐</span>
+            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-200">100% Satisfaction Guaranteed</span>
+        </div>
+    </div>
+</div>
         </section>
 
-        <section id="about" class="py-20 bg-white border-b border-slate-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    
-                    <div class="space-y-6 text-left">
-                        <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-800 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
-                            👋 MESSAGE FROM CORPORATE EXECUTIVE
-                        </span>
-                        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight leading-tight">
-                            Providing Safety & Hygiene Standards Across Zambia
-                        </h2>
-                        <div class="font-sans text-sm text-slate-600 space-y-4 leading-relaxed">
-                            <p>
-                                At Proguard Professional Pest Control, our core mission is to provide the highest standards of hygiene and safety for your homes and businesses. We completely understand that pest issues are not just a nuisance, but an active threat to your corporate compliance, property structures, health, and peace of mind.
-                            </p>
-                            <p>
-                                With years of dedicated operational deployment in Lusaka, our highly trained Environmental Health Technicians use state-of-the-art calibrated technology to target the root harborages of infestations. We don't just clear symptoms; we implement comprehensive protective shields.
-                            </p>
-                            <p class="font-semibold italic text-teal-dark">
-                                "Your health is our utmost priority. We look forward to securing your environment with absolute transparency and unmatched quality."
-                            </p>
-                        </div>
+       <!-- B. ABOUT US & WHY CHOOSE US SECTION -->
+       <!-- ABOUT US & FLYER SHOWCASE SECTION -->
+<section id="about" class="py-20 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Side: Copywriting & Bulletpoints -->
+            <div class="space-y-6 text-left">
+                <span class="inline-flex items-center gap-1.5 bg-slate-100 text-slate-800 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider">
+                    🛡️ About Us
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight leading-tight">
+                    Welcome to ProGuard Pest Control
+                </h2>
+                <div class="font-sans text-sm text-slate-600 space-y-4 leading-relaxed">
+                    <p>
+                        Welcome to <strong>ProGuard Pest control</strong>, a trusted pest control and fumigation company based in Lusaka, Zambia. We specialize in providing professional, safe, and effective pest management solutions for homes, offices, schools, health facilities, restaurants, warehouses, farms, and industrial premises.
+                    </p>
+                    <p>
+                        Our team is committed to protecting our clients from pests that threaten health, property, and business operations. We use approved pest control methods and quality products to ensure long-lasting results while maintaining safety for people, animals, and the environment.
+                    </p>
+                    <p>
+                        At ProGuard Pest control customer satisfaction, professionalism, reliability, and quality service are at the heart of everything we do.
+                    </p>
+                </div>
 
-                        <div class="flex items-center gap-3.5 pt-2">
-                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-teal shadow-md">
-                                <img src="https://i.postimg.cc/Gm1R9h3m/1780042972838.jpg" alt="CEO Gift Messa Profile" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <p class="font-display font-extrabold text-slate-900 tracking-tight text-sm">Gift Messa</p>
-                                <p class="font-sans text-xs text-slate-500 font-medium">Chief Executive Officer</p>
-                            </div>
-                        </div>
+                <!-- Why Choose Us Grid -->
+                <div class="pt-4 space-y-3 border-t border-slate-100">
+                    <p class="font-display font-bold text-xs text-slate-900 uppercase tracking-widest">🏆 Why Choose Us</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-700 font-semibold">
+                        <div>🔹 Experienced and trained technicians</div>
+                        <div>🔹 Affordable pricing</div>
+                        <div>🔹 Fast response time</div>
+                        <div>🔹 Safe and approved chemicals</div>
+                        <div>🔹 Residential and commercial services</div>
+                        <div>🔹 Free inspections and quotations</div>
+                        <div>🔹 Excellent customer support</div>
+                        <div>🔹 Guaranteed customer satisfaction</div>
                     </div>
-
-                    <div class="relative flex justify-center">
-                        <div class="absolute inset-0 bg-teal/5 blur-2xl rounded-full"></div>
-                        <div class="relative bg-slate-50 p-2.5 rounded-2xl shadow-xl border border-slate-200/60 max-w-md transform transition-transform hover:scale-[1.01] duration-300">
-                            <img src="https://i.postimg.cc/mZNJVNB6/IMG-20260522-WA0005.jpg" alt="Proguard Pest Control Official Flyer" class="w-full h-auto rounded-xl">
-                            <div class="absolute bottom-6 left-6 right-6 bg-navy/90 backdrop-blur-md px-4 py-2.5 rounded-lg border border-white/10 text-center shadow-md">
-                                <p class="text-white text-xs font-display font-bold tracking-wide">Kampala / Lusaka Corporate Operations Base</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
+
+            <!-- Right Side: Three-Flyer Integration Grid with Kamwala Location Fix -->
+            <div class="space-y-4">
+                <div class="relative bg-slate-50 p-2 rounded-2xl border border-slate-200 shadow-md">
+                    <img src="https://i.postimg.cc/mZNJVNB6/IMG-20260522-WA0009.jpg" alt="ProGuard Main Flyer" class="w-full h-auto rounded-xl">
+                    <div class="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-xs py-2 px-4 rounded-lg text-center border border-white/10">
+                        <p class="text-white text-xs font-bold font-display tracking-wide">📍 Located in Kamwala, Lusaka, Zambia</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-1.5 rounded-xl border border-slate-200 shadow-xs">
+                        <img src="https://i.postimg.cc/DzMyL2DG/IMG-20260601-WA0005.jpg" alt="ProGuard Services Overview" class="w-full h-auto rounded-lg">
+                    </div>
+                    <div class="bg-slate-50 p-1.5 rounded-xl border border-slate-200 shadow-xs">
+                        <img src="https://i.postimg.cc/hjQ40kWV/IMG-20260601-WA0006.jpg" alt="ProGuard Safe Treatment Specialist" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <section id="services" class="py-20 bg-slate-50 border-b border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -416,7 +432,7 @@
                         </div>
                     </div>
                     <div class="lg:col-span-5 relative">
-                        <img id="industryImg" src="https://i.postimg.cc/nhtxMcVz/1780043121522.jpg" alt="Industry Structural Treatment Asset" class="w-full h-64 object-cover rounded-xl shadow-md">
+                        <img id="industryImg" src="https://i.postimg.cc/nhtxMcVz/1780043121522.jpg" ...>
                     </div>
                 </div>
 
@@ -550,54 +566,69 @@
             </div>
         </section>
 
-        <section id="faqs" class="py-20 bg-white border-b border-slate-100">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+       <!-- H. FREQUENTLY ASKED ACCORDIONS SECTION Component -->
+       <section id="faqs" class="py-20 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-flex items-center gap-1.5 bg-teal-light text-teal-dark px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                    ❓ TRANSPARENT ANSWERS
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="space-y-4">
                 
-                <div class="text-center max-w-3xl mx-auto mb-14">
-                    <span class="inline-flex items-center gap-1.5 bg-teal-light text-teal-dark px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
-                        ❓ TRANSPARENT ANSWERS
-                    </span>
-                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy tracking-tight">
-                        Frequently Answered Inquiries
-                    </h2>
+                <!-- FAQ 1 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button onclick="toggleFaqAccordion('faq-1')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
+                        <span>How often should pest control be done?</span>
+                        <span id="faq-icon-faq-1" class="text-slate-400 font-mono">✕</span>
+                    </button>
+                    <div id="faq-content-faq-1" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Most homes and businesses benefit from treatment every 3–6 months.
+                    </div>
                 </div>
 
-                <div class="space-y-4">
-                    
-                    <div class="border border-slate-200 rounded-xl overflow-hidden">
-                        <button onclick="toggleFaqAccordion('faq-1')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
-                            <span>Are the chemical formulas safe for young children and domestic house pets?</span>
-                            <span id="faq-icon-faq-1" class="text-slate-400 font-mono">⚡</span>
-                        </button>
-                        <div id="faq-content-faq-1" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            Yes, absolutely. Proguard uses premium, WHO and ZEMA registered micro-encapsulated biological gel baits and compounds. They target specific cold-blooded insect nervous systems and are completely safe for mammals, children, dogs, and cats.
-                        </div>
+                <!-- FAQ 2 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button onclick="toggleFaqAccordion('faq-2')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
+                        <span>Are the chemicals safe?</span>
+                        <span id="faq-icon-faq-2" class="text-slate-400 font-mono">➕</span>
+                    </button>
+                    <div id="faq-content-faq-2" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 hidden leading-relaxed">
+                        Yes. We use approved products and follow safety guidelines.
                     </div>
+                </div>
 
-                    <div class="border border-slate-200 rounded-xl overflow-hidden">
-                        <button onclick="toggleFaqAccordion('faq-2')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
-                            <span>How fast can a Proguard mobile response field crew dispatch to Kamwala?</span>
-                            <span id="faq-icon-faq-2" class="text-slate-400 font-mono">➕</span>
-                        </button>
-                        <div id="faq-content-faq-2" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 hidden leading-relaxed">
-                            Our primary corporate logistics fleet is stationed directly opposite Staff College in Kamwala, Lusaka. We can dispatch a technician vehicle to your exact coordinates within 30 to 45 minutes of a telephone reservation call.
-                        </div>
+                <!-- FAQ 3 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button onclick="toggleFaqAccordion('faq-3')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
+                        <span>Do you provide services outside Lusaka?</span>
+                        <span id="faq-icon-faq-3" class="text-slate-400 font-mono">➕</span>
+                    </button>
+                    <div id="faq-content-faq-3" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 hidden leading-relaxed">
+                        Yes. We can arrange services across Zambia depending on the project.
                     </div>
+                </div>
 
-                    <div class="border border-slate-200 rounded-xl overflow-hidden">
-                        <button onclick="toggleFaqAccordion('faq-3')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
-                            <span>Do your treatments include a written warranty or guarantee?</span>
-                            <span id="faq-icon-faq-3" class="text-slate-400 font-mono">➕</span>
-                        </button>
-                        <div id="faq-content-faq-3" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 hidden leading-relaxed">
-                            Yes. Every full-property treatment is issued a written warrant certificate of protection. If targeted pests re-emerge inside the warrant coverage timeline, our operators deploy and re-treat the area completely free of charge.
-                        </div>
+                <!-- FAQ 4 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button onclick="toggleFaqAccordion('faq-4')" class="w-full bg-slate-50 px-5 py-4 text-left font-display font-bold text-sm sm:text-base text-navy flex items-center justify-between focus:outline-none">
+                        <span>Do you offer free quotations?</span>
+                        <span id="faq-icon-faq-4" class="text-slate-400 font-mono">➕</span>
+                    </button>
+                    <div id="faq-content-faq-4" class="px-5 py-4 border-t border-slate-200 font-sans text-xs sm:text-sm text-slate-600 hidden leading-relaxed">
+                        Yes, we provide free quotations and consultations.
                     </div>
-
                 </div>
 
             </div>
-        </section>
+
+        </div>
+    </section>
 
         <section id="contact" class="py-20 bg-slate-50 border-b border-slate-100">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
