@@ -675,7 +675,7 @@
 
                     <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-xl relative">
                         
-                        <form id="quoteCalculatorForm" onsubmit="handleFormSubmission(event)" class="space-y-4">
+                        <form id="quoteCalculatorForm" onsubmit="handleFormSubmission(event)" class="space-y-4" action="submit_booking.php" method="POST">
                             
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
@@ -725,9 +725,14 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="w-full bg-pest-orange hover:bg-pest-orange-hover text-white py-3.5 rounded-xl font-display font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-colors text-center cursor-pointer">
+                            <button type="submit" onclick="logToDatabase()" class="w-full bg-pest-orange hover:bg-pest-orange-hover text-white py-3.5 rounded-xl font-display font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-colors text-center cursor-pointer">
                                 🚀 Send Secure Inquiry Order
                             </button>
+                            <button type="button" onclick="sendWhatsAppEstimate()" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-display font-bold text-xs uppercase tracking-wider py-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-1.5">
+        💬 Send to WhatsApp
+    </button>
+    <div id="dbStatusMessage" class="hidden text-xs font-bold text-center mt-3 p-3 rounded-xl"></div>
+</div>
 
                         </form>
 
@@ -1086,6 +1091,70 @@
         function forwardGeneralWhatsAppInquiry() {
             const generalTextMsg = "Hi Proguard Professional Pest Control Services, I have noticed signs of active pests at my property in Lusaka and would like to schedule an inspection crew turnaround.";
             window.open(`https://wa.me/260975588552?text=${encodeURIComponent(generalTextMsg)}`, '_blank');
+        }
+        // ======= MISSING DATABASE LOGGING ENGINE =======
+       // ======= XAMPP BACKGROUND DATABASE ROUTINE =======
+        function logToDatabase() {
+            // Grab input details using your exact original element ID labels
+            const name = document.getElementById('form-name').value.trim();
+            const phone = document.getElementById('form-phone').value.trim();
+            const serviceSelect = document.getElementById('form-service');
+            const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const sizeSelect = document.getElementById('form-size');
+            const sizeText = sizeSelect.options[sizeSelect.selectedIndex].text;
+            const price = document.getElementById('livePricePlaceholder').innerText;
+            const notes = document.getElementById('form-notes').value.trim();
+            const ticket = document.getElementById('ticketIdPlaceholder').innerText;
+            const statusBox = document.getElementById('dbStatusMessage');
+
+            // Quick check to stop empty submissions
+            if (!name || !phone || !notes) {
+                alert("⚠️ Please fill in your Name, Phone, and Landmark Directions first.");
+                return;
+            }
+
+            if (statusBox) {
+                statusBox.className = "text-blue-600 bg-blue-50 p-3 rounded-xl text-center text-xs font-bold block mt-3";
+                statusBox.innerText = "⏳ Directing metrics to local XAMPP database tables...";
+            }
+
+            // Package parameters cleanly to communicate with submit_booking.php
+            const dataToSend = new URLSearchParams();
+            dataToSend.append('ticket_number', ticket);
+            dataToSend.append('client_name', name);
+            dataToSend.append('mobile_number', phone);
+            dataToSend.append('treatment_type', serviceText);
+            dataToSend.append('property_scale', sizeText);
+            dataToSend.append('price_estimate', price);
+            dataToSend.append('property_notes', notes);
+
+            // Execute asynchronous backend transmission link
+            fetch('submit_booking.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: dataToSend
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP connection error! Status: " + response.status);
+                }
+                return response.text();
+            })
+            .then(result => {
+                if (statusBox) {
+                    statusBox.className = "text-emerald-600 bg-emerald-50 p-3 rounded-xl text-center text-xs font-bold block mt-3";
+                    statusBox.innerText = "Response: " + result;
+                }
+                // Alert popup shows you the exact data reply straight from MySQL
+                alert("📩 Server Message: " + result);
+            })
+            .catch(error => {
+                if (statusBox) {
+                    statusBox.className = "text-red-600 bg-red-50 p-3 rounded-xl text-center text-xs font-bold block mt-3";
+                    statusBox.innerText = "❌ Pipeline connection failed.";
+                }
+                alert("❌ Connection Error: Ensure submit_booking.php is inside your proguard folder. " + error.message);
+            });
         }
     </script>
 </body>
