@@ -1128,12 +1128,13 @@
             dataToSend.append('price_estimate', price);
             dataToSend.append('property_notes', notes);
 
-            // Execute asynchronous backend transmission link
-            fetch('submit_booking.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: dataToSend
-            })
+           // ======= UPDATE THIS BLOCK INSIDE YOUR GITHUB HTML CODE =======
+// Instead of calling 'submit_booking.php' locally, point it to InfinityFree:
+fetch('http://proguard-pest-control-service.22web.org/submit_booking.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: dataToSend
+})
             .then(response => {
                 if (!response.ok) {
                     throw new Error("HTTP connection error! Status: " + response.status);
